@@ -108,7 +108,7 @@ plt.legend()
 plt.show()
 plt.savefig("work_year_distribution.png")
 ```
-![first desc img](/assets/images/workYear_pieChart.png)
+![first desc img]([/assets/images/workYear_pieChart.png](https://github.com/taniadeedar11/CAREER-RECOMANDATION-FOR-DATA-SCIENCE-2023/blob/main/ExLevel_pieChart.png))
 
 From above numbers we can say that, we have
 ```pytho
