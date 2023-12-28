@@ -56,7 +56,7 @@ df
 ```
 Now, we will demonstrate the size of our existing unstructured data set prior to cleaning, which will facilitate the comparison of its size post data preparation.
 
-![Data shape and size](/assets/images/shape_size.png)
+![Data shape and size](/images/shape_size.png)
 
 The execution of the given line of code will generate the visualization of the dataset, displaying its rows and columns.
 
@@ -64,19 +64,19 @@ The execution of the given line of code will generate the visualization of the d
 df #just to show the consitency of the data we're going to show the top 5 and bottom 5 rows of the dataset
 ```
 
-![first df img](/assets/images/df1.png)
+![first df img](/images/df1.png)
 
 Furthermore, we will present the dataset's information, which will help us to understand the dataset.
 
-![first info img](/assets/images/info1.png)
+![first info img](/images/info1.png)
 
 The DataFrame contains data description and generates statistical summaries that depict the distribution's central tendency and shape, excluding NaN values. Additionally, the percentile indicates the number of values that are less than the specified percentile, provided that the DataFrame comprises numerical data.
 
-![first desc img](/assets/images/desc1.png)
+![first desc img](/images/desc1.png)
 
 ### Data type verification
 It is important to note that the dataset may consist of attributes of different types. In situations where the data is categorical, it is crucial to transform them into continuous numeric attributes.
-![first desc img](/assets/images/dtype1.png)
+![first desc img](/images/dtype1.png)
 
 ---
 # 3 - EXPLORATORY DATA ANALYSIS (EDA)
@@ -108,7 +108,7 @@ plt.legend()
 plt.show()
 plt.savefig("work_year_distribution.png")
 ```
-![first desc img]([/assets/images/workYear_pieChart.png](https://github.com/taniadeedar11/CAREER-RECOMANDATION-FOR-DATA-SCIENCE-2023/blob/main/ExLevel_pieChart.png))
+![first desc img]([/images/workYear_pieChart.png])
 
 From above numbers we can say that, we have
 ```pytho
@@ -142,7 +142,7 @@ plt.legend()
 plt.show()
 plt.savefig("exp_level_distribution.png")
 ```
-![first desc img](/assets/images/ExLevel_pieChart.png)
+![first desc img](/images/ExLevel_pieChart.png)
 
 ## 3.3 Employment Type
 The code below demonstrates the total count of job types present in our dataset.
@@ -170,7 +170,7 @@ plt.legend()
 plt.show()
 plt.savefig("employment_type_distribution.png")
 ```
-![first desc img](/assets/images/empType_pieChart.png)
+![first desc img](/images/empType_pieChart.png)
 
 The graph and statistics above indicate a substantial higher number of job opportunities available for full-time employment in the field of data science.
 
@@ -185,7 +185,7 @@ plt.title('Job Title with the fewest number of jobs')
 plt.ylabel('ratio')
 plt.xlabel('Employment/Job Title')
 ```
-![first desc img](/assets/images/jobTitle_bar.png)
+![first desc img](/images/jobTitle_bar.png)
 The dataset contains only one occurrence of the following job titles.
 
 ```pytho
@@ -238,7 +238,7 @@ plt.title('Job Title with the highest number of jobs')
 plt.ylabel('ratio')
 plt.xlabel('Employment/Job Title')
 ```
-![first desc img](/assets/images/jobTitle_bar2.png)
+![first desc img](/images/jobTitle_bar2.png)
 
 ### 3.4.c Top 10 highest No. of job in data science
 The dataset reveals the visualization by the pie chart of the employment sector that has the highest number of jobs.
@@ -277,7 +277,7 @@ plt.legend()
 plt.savefig("most_employment_title.png")
 plt.show()
 ```
-![first desc img](/assets/images/jobTitle_bar3.png)
+![first desc img](/images/jobTitle_bar3.png)
 
 ## 3.5 Employee Salary
 The visualization of employees' salaries is necessary in order to identify any outliers within the dataset. To detect these outliers, it is essential to visualize salary column.
@@ -441,7 +441,7 @@ Outliers Rows in dataset : 707
 sns.boxplot(x=df['salary_USD'], color = 'green')
 ```
 
-![first desc img](/assets/images/empSalary_boxPlot2.png)
+![first desc img](/images/empSalary_boxPlot2.png)
 
 ## 3.6 Work Year and Salary
 ```pytho
@@ -455,7 +455,7 @@ sns.boxplot(x = 'work_year', y='salary_USD', data = df, ax =ax[0]).set_title('Wo
 sns.violinplot(x = 'work_year', y='salary_USD', data = df, ax =ax[1]).set_title('Work Year vs Salary')
 ```
 
-![first desc img](/assets/images/workyearAndSalary.png)
+![first desc img](/images/workyearAndSalary.png)
 
 
 
