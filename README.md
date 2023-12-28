@@ -37,10 +37,15 @@ We need to import libraries that are required to process dataset, which will be 
 #Following libraries will be used to perform data exploration
 
 import pandas as pd
+
 import numpy as np
+
 import seaborn as sns                       #Visualisation
+
 import matplotlib.pyplot as plt             #Visualisation
+
 %matplotlib inline
+
 sns.set(color_codes=True)
 
 
