@@ -35,13 +35,14 @@ We need to import libraries that are required to process dataset, which will be 
 
 + ```python
 #Following libraries will be used to perform data exploration
+
 import pandas as pd
 import numpy as np
 import seaborn as sns                       #Visualisation
 import matplotlib.pyplot as plt             #Visualisation
 %matplotlib inline
 sns.set(color_codes=True)
-```
+
 
 ### Loading the data into the data frame
 Loading the data into a data frame using the Python library pandas is the initial and crucial step in data exploration or exploratory data analysis. Hence, we must read our CSV file named "ds_salaries2023.csv" that contains a collection of rows and columns and is located in the directory.
