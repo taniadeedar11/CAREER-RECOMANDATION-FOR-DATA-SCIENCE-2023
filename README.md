@@ -23,7 +23,7 @@ Following are the business question which we're going to answer by our insights 
 This is the prior knowledge phase to gather relevant data about career recommendation of data science, including its subfield such as data analyst, machine learning etc. We have sourced this data from kaggle to ensure that we meet our requirements then we can able to answer the business questions that are necessary in the data science process.
 
 Sources from which we collect data 
-[Kaggle](https://www.kaggle.com/datasets)]
+[Kaggle(https://www.kaggle.com/datasets)]
 
 # DATA PREPARATION
 ---
@@ -48,6 +48,6 @@ import matplotlib.pyplot as plt             #Visualisation
 
 sns.set(color_codes=True)
 
-
+```
 ### Loading the data into the data frame
 Loading the data into a data frame using the Python library pandas is the initial and crucial step in data exploration or exploratory data analysis. Hence, we must read our CSV file named "ds_salaries2023.csv" that contains a collection of rows and columns and is located in the directory.
