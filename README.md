@@ -45,3 +45,22 @@ sns.set(color_codes=True)
 
 ### Loading the data into the data frame
 Loading the data into a data frame using the Python library pandas is the initial and crucial step in data exploration or exploratory data analysis. Hence, we must read our CSV file named "ds_salaries2023.csv" that contains a collection of rows and columns and is located in the directory.
+```pytho
+from google.colab import drive
+drive.mount('/content/drive')
+```
+```pytho
+df = pd.read_csv("/content/drive/MyDrive/DSDataSet/ds_salaries2023.csv")
+df
+```
+Now, we will demonstrate the size of our existing unstructured data set prior to cleaning, which will facilitate the comparison of its size post data preparation.
+![Data shape and size](/assets/images/shape_size.png)
+
+The execution of the given line of code will generate the visualization of the dataset, displaying its rows and columns.
+
+```pytho
+df #just to show the consitency of the data we're going to show the top 5 and bottom 5 rows of the dataset
+```
+
+![first df img](/assets/images/df1.png)
+
