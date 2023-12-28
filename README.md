@@ -18,4 +18,19 @@ Following are the business question which we're going to answer by our insights 
 + **Salary Recommendation**: Business Question: Is it possible for us to suggest salaries based on experience?
 + **Location-Based Analysis:**  Business Question: How does the geographic location impact career opportunities and salaries in Data Science, and what recommendations can be provided for individuals considering relocation for their career?
 + **Analysis of Career Growth:** Business Question: What are the various factors that influence the growth of salary in the field of Data Science, including job title and location? Additionally, what recommendations can be made to ensure that salaries of professionals in this field stay competitive based on their job title and location?
+
++ ### Data Collection
+This is the prior knowledge phase to gather relevant data about career recommendation of data science, including its subfield such as data analyst, machine learning etc. We have sourced this data from kaggle to ensure that we meet our requirements then we can able to answer the business questions that are necessary in the data science process.
+
+Sources from which we collect data 
+[Kaggle](https://www.kaggle.com/datasets)
+
+# DATA PREPARATION
+---
+Our Dataset contains 3755 rows × 11 columns which include featuers of data science and these attributes has relationship among them and we'll explore the data by visualization with various libraries available in python to visualize data.
+
+### Importing Libraries
+We need to import libraries that are required to process dataset, which will be using to clean data and which are using to visualize data
 + **Salary Prediction** Business Question: Can future salaries for data science be predicted by considering factors like experience and job title?
+
++ 
