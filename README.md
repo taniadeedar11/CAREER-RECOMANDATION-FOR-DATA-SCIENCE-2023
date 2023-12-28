@@ -23,7 +23,7 @@ Following are the business question which we're going to answer by our insights 
 This is the prior knowledge phase to gather relevant data about career recommendation of data science, including its subfield such as data analyst, machine learning etc. We have sourced this data from kaggle to ensure that we meet our requirements then we can able to answer the business questions that are necessary in the data science process.
 
 Sources from which we collect data 
-[Kaggle](https://www.kaggle.com/datasets)
+[Kaggle](https://www.kaggle.com/datasets)]
 
 # DATA PREPARATION
 ---
