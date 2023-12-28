@@ -58,9 +58,40 @@ Now, we will demonstrate the size of our existing unstructured data set prior to
 
 The execution of the given line of code will generate the visualization of the dataset, displaying its rows and columns.
 
-```pytho
+```python
 df #just to show the consitency of the data we're going to show the top 5 and bottom 5 rows of the dataset
 ```
 
 ![first df img](/assets/images/df1.png)
+
+Furthermore, we will present the dataset's information, which will help us to understand the dataset.
+
+![first info img](/assets/images/info1.png)
+
+The DataFrame contains data description and generates statistical summaries that depict the distribution's central tendency and shape, excluding NaN values. Additionally, the percentile indicates the number of values that are less than the specified percentile, provided that the DataFrame comprises numerical data.
+
+![first desc img](/assets/images/desc1.png)
+
+### Data type verification
+It is important to note that the dataset may consist of attributes of different types. In situations where the data is categorical, it is crucial to transform them into continuous numeric attributes.
+![first desc img](/assets/images/dtype1.png)
+
+---
+# 3 - EXPLORATORY DATA ANALYSIS (EDA)
+In the exploratory data analysis, We will be looking at the data and try to understand the data. I will begin by looking at the distribution of data across the dat-set, followed by visualising the data to understand the relationship between the features and the target variable.
+
+## 3.1 Work Year
+We will showcase the dataset comprising the work done in the years 2020 to 2023.
+```pytho
+df['work_year'].value_counts()
+```
+2023    1065
+
+2022    1011
+
+2021    223
+
+2020    75
+
+Name: work_year, dtype: int64
 
