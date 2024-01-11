@@ -458,6 +458,115 @@ sns.violinplot(x = 'work_year', y='salary_USD', data = df, ax =ax[1]).set_title(
 ![first desc img](/images/workyearAndSalary.png)
 
 
+## 3.7 Job title and Salary
+## 3.7.a Highest Salary Job title
+```pytho
+data = df.groupby('employment_title').mean('numeric')['salary_USD'].reset_index().sort_values(by='salary_USD', ascending=False).head(12)
+sns.barplot(y=data['employment_title'], x=data['salary_USD'], palette='dark:#5A9_r')
+
+sns.set(rc={'xtick.labelsize':10,
+            'ytick.labelsize':10})
+
+plt.gcf().text(.15, .90,
+               "Top-12 highest salary job titles",
+               fontsize = 17,
+               color='Black')
+plt.show()
+```
+
+![first desc img](/assets/images/highestjobtitle.png)
+
+## 3.7.b Lowest Salary Job title
+```pytho
+plt.figure(figsize=(12,5))
+data = df.groupby('employment_title').mean('numeric')['salary_USD'].reset_index().sort_values(by='salary_USD', ascending=False).tail(12)
+
+sns.barplot(y=data['employment_title'], x=data['salary_USD'],palette='dark:#5A9_r')
+
+sns.set(rc={'xtick.labelsize':10,
+            'ytick.labelsize':10})
+
+plt.gcf().text(.15, .90,
+               "Top-12 lowest salary job titles",
+               fontsize = 17,
+               color='Black')
+plt.show()
+```
+![first desc img](assets/images/lowestsalaryjobtitle.png)
+
+## 3.8 Experience Level and Salary 
+```pytho
+data = df.groupby(['work_year', 'experience_level']).salary_USD.mean().reset_index()
+sns.barplot(x= data['experience_level'], y= data['salary_USD'], hue= data['work_year'], palette='dark:#5A9_r')
+
+sns.set(rc={'xtick.labelsize':7,
+            'ytick.labelsize':10})
+plt.gcf().text(.12, .92,
+               "Average salary based on experience level",
+               fontsize = 17,
+               color='Black')
+
+plt.show()
+```
+![first desc img](/assets/images/averagesalarybasedonexperiance.png)
+## 3.9 Employment Type and Salary
+``` pytho
+data = df.groupby(['work_year', 'employment_type']).salary_USD.mean().reset_index()
+sns.barplot(x= data['employment_type'], y= data['salary_USD'], hue= data['work_year'], palette='dark:#5A9_r')
+
+sns.set(rc={'xtick.labelsize':10,
+            'ytick.labelsize':10})
+
+plt.gcf().text(.12, .92,
+               "Average salary based on employment type",
+               fontsize = 17,
+               color='Black')
+
+
+plt.show()
+```
+![first desc img](/assets/images/averagesalarybasedexperiancetype.png)
+
+## 3.10 Job Location and Salary
+```pytho
+data = df.groupby('employment_location').mean('numeric')['salary_USD'].reset_index().sort_values(by='salary_USD', ascending=False).head(15)
+sns.barplot(y=data['employment_location'], x=data['salary_USD'])
+
+sns.set(rc={'xtick.labelsize':10,
+            'ytick.labelsize':10})
+
+plt.gcf().text(.01, .90,
+               "Top 15 countries(Job location) with highest salary",
+               fontsize = 17,
+               color='Black')
+plt.show()
+```
+data = df.groupby('employment_location').mean('numeric')['salary_USD'].reset_index().sort_values(by='salary_USD', ascending=False).head(15)
+sns.barplot(y=data['employment_location'], x=data['salary_USD'])
+
+sns.set(rc={'xtick.labelsize':10,
+            'ytick.labelsize':10})
+
+plt.gcf().text(.01, .90,
+               "Top 15 countries(Job location) with highest salary",
+               fontsize = 17,
+               color='Black')
+plt.show()
+```
+
+![first desc img](/assets/images/top15location.png)
+
+## 3.11 Employee Location and Salary
+
+
+
+
+
+
+
+
+
+
 
 
 
