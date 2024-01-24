@@ -72,7 +72,7 @@ Furthermore, we will present the dataset's information, which will help us to un
 
 The DataFrame contains data description and generates statistical summaries that depict the distribution's central tendency and shape, excluding NaN values. Additionally, the percentile indicates the number of values that are less than the specified percentile, provided that the DataFrame comprises numerical data.
 
-![first desc1 img](/images/desc1.png)
+![first desc img](/images/desc1.png)
 
 ### Data type verification
 It is important to note that the dataset may consist of attributes of different types. In situations where the data is categorical, it is crucial to transform them into continuous numeric attributes.
