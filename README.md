@@ -108,7 +108,7 @@ plt.legend()
 plt.show()
 plt.savefig("work_year_distribution.png")
 ```
-![first desc img]([/images/workYear_pieChart.png])
+![first desc img](/images/workYear_pieChart.png)
 
 From above numbers we can say that, we have
 ```pytho
@@ -277,7 +277,7 @@ plt.legend()
 plt.savefig("most_employment_title.png")
 plt.show()
 ```
-![first desc img](/images/jobTitle_bar3.png)
+![first desc img](/assets/images/jobTitle_bar3.png)
 
 ## 3.5 Employee Salary
 The visualization of employees' salaries is necessary in order to identify any outliers within the dataset. To detect these outliers, it is essential to visualize salary column.
@@ -288,7 +288,7 @@ The visualization of employees' salaries is necessary in order to identify any o
 ```pytho
 sns.boxplot(x=df['salary_USD'], color = 'yellow')
 ```
-![first desc img](/assets/images/empSalary_boxPlot.png)
+![first desc img](/images/empSalary_boxPlot.png)
 
 The box plot above illustrates that the majority of employee salaries fall under 200,000, while a few salaries are beyond the range of 300,000 that may become an outliers and if there are any outliers in our dataset, it is necessary to eliminate them by identifying the quantile in our dataset.
 
@@ -455,8 +455,7 @@ sns.boxplot(x = 'work_year', y='salary_USD', data = df, ax =ax[0]).set_title('Wo
 sns.violinplot(x = 'work_year', y='salary_USD', data = df, ax =ax[1]).set_title('Work Year vs Salary')
 ```
 
-![first desc img](/images/workyearAndSalary.png)
-
+![first desc img](/images/workyearandsalary.png)
 
 ## 3.7 Job title and Salary
 ## 3.7.a Highest Salary Job title
@@ -474,7 +473,7 @@ plt.gcf().text(.15, .90,
 plt.show()
 ```
 
-![first desc img](/assets/images/highestjobtitle.png)
+![first desc img](/images/highestjobtitle.png)
 
 ## 3.7.b Lowest Salary Job title
 ```pytho
@@ -492,7 +491,7 @@ plt.gcf().text(.15, .90,
                color='Black')
 plt.show()
 ```
-![first desc img](assets/images/lowestsalaryjobtitle.png)
+![first desc img](/images/lowestsalaryjobtitle.png)
 
 ## 3.8 Experience Level and Salary 
 ```pytho
@@ -508,7 +507,7 @@ plt.gcf().text(.12, .92,
 
 plt.show()
 ```
-![first desc img](/assets/images/averagesalarybasedonexperiance.png)
+![first desc img](/images/averagesalarybasedonexperiance.png)
 ## 3.9 Employment Type and Salary
 ``` pytho
 data = df.groupby(['work_year', 'employment_type']).salary_USD.mean().reset_index()
@@ -525,7 +524,7 @@ plt.gcf().text(.12, .92,
 
 plt.show()
 ```
-![first desc img](/assets/images/averagesalarybasedexperiancetype.png)
+![first desc img](/images/averagesalarybasedexperiancetype.png)
 
 ## 3.10 Job Location and Salary
 ```pytho
@@ -554,19 +553,9 @@ plt.gcf().text(.01, .90,
 plt.show()
 ```
 
-![first desc img](/assets/images/top15location.png)
+![first desc img](/images/top15location.png)
 
 ## 3.11 Employee Location and Salary
-
-
-
-
-
-
-
-
-
-
 
 
 
